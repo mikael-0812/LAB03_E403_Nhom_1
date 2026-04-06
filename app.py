@@ -1,142 +1,129 @@
 import os
 from html import escape
-from typing import Dict
+from typing import Dict, List
 
 import streamlit as st
 
 from src.app_runtime import (
-    DYNAMIC_TOOLS_SCHEMA,
-    TEST_CASES,
     get_default_model,
     initialize_provider,
     resolve_local_model_path,
     run_agent_with_trace,
-    run_baseline,
 )
 
 
-def apply_custom_styles():
+def apply_chat_styles():
     st.markdown(
         """
         <style>
+            :root {
+                --chat-max-width: 48rem;
+                --sidebar-width: 21rem;
+            }
             .stApp {
-                background:
-                    radial-gradient(circle at top left, rgba(244, 180, 0, 0.18), transparent 32%),
-                    radial-gradient(circle at top right, rgba(12, 118, 110, 0.16), transparent 28%),
-                    linear-gradient(180deg, #f7f3ea 0%, #fffdf8 42%, #f3efe6 100%);
-                color: #1e293b;
-                font-family: "Aptos", "Segoe UI", sans-serif;
-            }
-            .block-container {
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-                max-width: 1180px;
-            }
-            h1, h2, h3 {
-                font-family: "Georgia", "Times New Roman", serif;
-                letter-spacing: -0.02em;
-            }
-            .hero-card {
-                padding: 1.5rem 1.6rem;
-                border-radius: 24px;
-                background: rgba(255, 255, 255, 0.78);
-                border: 1px solid rgba(15, 23, 42, 0.08);
-                box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
-                backdrop-filter: blur(6px);
-                margin-bottom: 1rem;
-            }
-            .hero-kicker {
-                font-size: 0.86rem;
-                text-transform: uppercase;
-                letter-spacing: 0.16em;
-                color: #0f766e;
-                font-weight: 700;
-                margin-bottom: 0.65rem;
-            }
-            .hero-title {
-                font-size: 2.5rem;
-                line-height: 1.1;
+                background: #f7f7f8;
                 color: #111827;
-                margin: 0 0 0.75rem 0;
             }
-            .hero-copy {
-                font-size: 1.02rem;
-                line-height: 1.75;
-                color: #475569;
+            .main .block-container {
+                max-width: var(--chat-max-width);
+                padding-top: 1.2rem;
+                padding-bottom: 8rem;
+            }
+            section[data-testid="stSidebar"] {
+                background: #202123;
+            }
+            section[data-testid="stSidebar"] * {
+                color: #f3f4f6;
+            }
+            .chat-shell {
+                margin: 0 auto 1.25rem auto;
+            }
+            .chat-header {
+                display: flex;
+                align-items: center;
+                gap: 0.6rem;
+                color: #6b7280;
+                font-size: 0.92rem;
+                margin-bottom: 0.75rem;
+            }
+            .chat-welcome {
+                min-height: 52vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: #6b7280;
+                padding: 1rem;
+            }
+            .chat-welcome h1 {
+                margin: 0 0 0.5rem 0;
+                font-size: 2.2rem;
+                font-weight: 600;
+                color: #111827;
+                letter-spacing: -0.03em;
+            }
+            .chat-welcome p {
                 margin: 0;
+                font-size: 1rem;
+                line-height: 1.7;
             }
-            .metric-grid {
-                display: grid;
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-                gap: 0.9rem;
-                margin: 1rem 0 1.4rem 0;
+            div[data-testid="stChatMessage"] {
+                padding-left: 0;
+                padding-right: 0;
             }
-            .metric-card {
-                padding: 1rem 1.1rem;
-                border-radius: 20px;
-                background: rgba(255, 255, 255, 0.82);
-                border: 1px solid rgba(15, 23, 42, 0.08);
+            div[data-testid="stChatMessageContent"] {
+                font-size: 1rem;
+                line-height: 1.75;
             }
-            .metric-label {
-                font-size: 0.84rem;
-                text-transform: uppercase;
-                letter-spacing: 0.08em;
-                color: #64748b;
-                margin-bottom: 0.3rem;
+            div[data-testid="stChatInput"] {
+                position: fixed;
+                left: 50%;
+                bottom: 1rem;
+                transform: translateX(-50%);
+                width: min(var(--chat-max-width), calc(100vw - 2rem));
+                z-index: 1000;
             }
-            .metric-value {
-                font-size: 1.45rem;
-                font-weight: 700;
-                color: #0f172a;
+            div[data-testid="stChatInput"] > div {
+                border: 1px solid rgba(17, 24, 39, 0.08);
+                border-radius: 1.1rem;
+                background: rgba(255, 255, 255, 0.96);
+                box-shadow: 0 18px 48px rgba(15, 23, 42, 0.12);
+                backdrop-filter: blur(10px);
             }
-            .result-shell {
-                padding: 1rem 1.1rem;
-                border-radius: 20px;
-                min-height: 240px;
-                border: 1px solid rgba(15, 23, 42, 0.08);
-                background: rgba(255, 255, 255, 0.88);
-            }
-            .result-title {
-                font-size: 0.86rem;
-                text-transform: uppercase;
-                letter-spacing: 0.14em;
-                color: #0f766e;
-                font-weight: 700;
-                margin-bottom: 0.85rem;
+            .trace-caption {
+                color: #6b7280;
+                font-size: 0.9rem;
             }
             .trace-box {
-                padding: 0.9rem 1rem;
-                border-radius: 16px;
-                background: #0f172a;
-                color: #e2e8f0;
+                padding: 0.95rem 1rem;
+                border-radius: 0.9rem;
+                background: #111827;
+                color: #e5e7eb;
                 font-family: "Consolas", "Menlo", monospace;
-                font-size: 0.85rem;
+                font-size: 0.84rem;
                 line-height: 1.7;
                 white-space: pre-wrap;
             }
-            .tool-card {
-                padding: 0.95rem 1rem;
-                border-radius: 18px;
-                background: rgba(255, 255, 255, 0.8);
-                border: 1px solid rgba(15, 23, 42, 0.08);
-                margin-bottom: 0.8rem;
+            .input-spacer {
+                height: 6rem;
             }
-            .tool-name {
-                font-weight: 700;
-                color: #111827;
-                margin-bottom: 0.35rem;
-            }
-            .tool-desc {
-                color: #475569;
-                line-height: 1.6;
-                font-size: 0.95rem;
-            }
-            @media (max-width: 900px) {
-                .hero-title {
-                    font-size: 2rem;
+            @media (min-width: 1100px) {
+                section[data-testid="stSidebar"][aria-expanded="true"] ~ div[data-testid="stAppViewContainer"] div[data-testid="stChatInput"] {
+                    left: calc(50% + (var(--sidebar-width) / 2));
+                    width: min(var(--chat-max-width), calc(100vw - var(--sidebar-width) - 2rem));
                 }
-                .metric-grid {
-                    grid-template-columns: 1fr;
+            }
+            @media (max-width: 768px) {
+                .main .block-container {
+                    padding-top: 0.8rem;
+                    padding-bottom: 7rem;
+                }
+                .chat-welcome h1 {
+                    font-size: 1.8rem;
+                }
+                div[data-testid="stChatInput"] {
+                    width: calc(100vw - 1rem);
+                    bottom: 0.5rem;
                 }
             }
         </style>
@@ -160,154 +147,113 @@ def get_llm(provider: str, model_name: str, api_key: str, local_model_path: str)
     )
 
 
-def render_result_block(title: str, content: str):
-    safe_title = escape(title)
-    safe_content = escape(content).replace("\n", "<br>")
-    st.markdown(
-        f"""
-        <div class="result-shell">
-            <div class="result-title">{safe_title}</div>
-            <div>{safe_content}</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+def build_conversation_prompt(messages: List[Dict[str, str]], latest_user_input: str) -> str:
+    if not messages:
+        return latest_user_input
+
+    transcript = [
+        "Dưới đây là lịch sử hội thoại gần nhất. Hãy giữ đúng ngữ cảnh trước đó khi trả lời.",
+        "",
+    ]
+
+    for message in messages[-12:]:
+        speaker = "User" if message["role"] == "user" else "Assistant"
+        transcript.append(f"{speaker}: {message['content']}")
+
+    transcript.append("")
+    transcript.append(f"User: {latest_user_input}")
+    return "\n".join(transcript)
 
 
-def render_trace_block(trace_lines):
+def render_trace_block(trace_lines: List[str]):
     safe_trace = "<br>".join(escape(line) for line in trace_lines)
+    st.caption("Trace ReAct")
     st.markdown(
         f'<div class="trace-box">{safe_trace}</div>',
         unsafe_allow_html=True,
     )
 
 
-def run_comparison(user_input: str, config: Dict[str, str], always_run_agent: bool):
+def run_chat_turn(
+    user_input: str,
+    config: Dict[str, str],
+    conversation_history: List[Dict[str, str]],
+):
+    prompt = build_conversation_prompt(conversation_history, user_input)
     llm = get_llm(
         provider=config["provider"],
         model_name=config["model_name"],
         api_key=config["api_key"],
         local_model_path=config["local_model_path"],
     )
-    baseline_answer = run_baseline(llm, user_input)
+    return run_agent_with_trace(llm, prompt)
 
-    if always_run_agent or "[UNSUPPORTED]" in baseline_answer:
-        agent_answer, trace_lines = run_agent_with_trace(llm, user_input)
-    else:
-        agent_answer = f"(Dùng lại kết quả chatbot) {baseline_answer}"
-        trace_lines = ["Agent không cần gọi tool vì Baseline đã xử lý được yêu cầu."]
 
-    return baseline_answer, agent_answer, trace_lines
+def render_assistant_message(answer: str, trace_lines: List[str]):
+    st.markdown(answer)
+    with st.expander("Trace ReAct", expanded=False):
+        render_trace_block(trace_lines)
 
 
 def main():
     st.set_page_config(
-        page_title="LAB1 ReAct Agent UI",
-        page_icon="🧠",
-        layout="wide",
-        initial_sidebar_state="expanded",
+        page_title="LAB1 ReAct Chat",
+        page_icon="💬",
+        layout="centered",
+        initial_sidebar_state="collapsed",
     )
-    apply_custom_styles()
-
-    st.markdown(
-        """
-        <div class="hero-card">
-            <div class="hero-kicker">LAB1 Interface</div>
-            <h1 class="hero-title">Giao diện demo cho Chatbot vs ReAct Agent</h1>
-            <p class="hero-copy">
-                Màn hình này giúp bạn chạy nhanh các test case mẫu, so sánh Baseline Chatbot với ReAct Agent
-                và theo dõi trace gọi tool trong cùng một nơi. Giao diện giữ nguyên logic dự án hiện có,
-                nên bạn có thể vừa demo bài lab vừa tiếp tục phát triển từ mã nguồn cũ.
-            </p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-    st.markdown(
-        f"""
-        <div class="metric-grid">
-            <div class="metric-card">
-                <div class="metric-label">Test Cases</div>
-                <div class="metric-value">{len(TEST_CASES)}</div>
-            </div>
-            <div class="metric-card">
-                <div class="metric-label">Dynamic Tools</div>
-                <div class="metric-value">{len(DYNAMIC_TOOLS_SCHEMA)}</div>
-            </div>
-            <div class="metric-card">
-                <div class="metric-label">Luồng Demo</div>
-                <div class="metric-value">Baseline + Agent</div>
-            </div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    apply_chat_styles()
 
     provider_options = {
         "OpenAI": "openai",
         "Gemini": "gemini",
         "Local GGUF": "local",
     }
-    env_provider = os.getenv("DEFAULT_PROVIDER", "openai").lower()
-    default_provider_index = list(provider_options.values()).index(
-        env_provider if env_provider in provider_options.values() else "openai"
-    )
+
+    if "messages" not in st.session_state:
+        st.session_state.messages = []
 
     with st.sidebar:
-        st.header("Cấu hình")
+        st.subheader("Settings")
         provider_label = st.selectbox(
             "Provider",
             list(provider_options.keys()),
-            index=default_provider_index,
+            index=list(provider_options.values()).index(
+                os.getenv("DEFAULT_PROVIDER", "openai").lower()
+                if os.getenv("DEFAULT_PROVIDER", "openai").lower() in provider_options.values()
+                else "openai"
+            ),
         )
         provider = provider_options[provider_label]
 
         if provider == "openai":
-            model_name = st.text_input(
-                "Model OpenAI",
-                value=get_default_model("openai"),
-                key="openai_model_name",
-            )
+            model_name = st.text_input("Model", value=get_default_model("openai"))
             api_key = st.text_input(
                 "OPENAI_API_KEY",
                 value=os.getenv("OPENAI_API_KEY", ""),
                 type="password",
-                key="openai_api_key",
             )
             local_model_path = resolve_local_model_path()
         elif provider == "gemini":
-            model_name = st.text_input(
-                "Model Gemini",
-                value=get_default_model("gemini"),
-                key="gemini_model_name",
-            )
+            model_name = st.text_input("Model", value=get_default_model("gemini"))
             api_key = st.text_input(
                 "GEMINI_API_KEY",
                 value=os.getenv("GEMINI_API_KEY", ""),
                 type="password",
-                key="gemini_api_key",
             )
             local_model_path = resolve_local_model_path()
         else:
             model_name = get_default_model("local")
             api_key = ""
             local_model_path = st.text_input(
-                "Đường dẫn model GGUF",
+                "GGUF Path",
                 value=resolve_local_model_path(),
-                key="local_model_path",
             )
-            st.caption("UI sẽ cache model local để tránh load lại mỗi lần bấm chạy.")
 
         st.divider()
-        always_run_agent = st.checkbox(
-            "Luôn chạy ReAct Agent",
-            value=True,
-            help="Nếu bỏ chọn, Agent chỉ chạy khi Baseline trả về [UNSUPPORTED].",
-        )
-        st.caption(
-            "Mẹo: với provider local, lần chạy đầu có thể chậm hơn vì cần nạp file GGUF."
-        )
+        if st.button("Clear conversation", use_container_width=True):
+            st.session_state.messages = []
+            st.rerun()
 
     config = {
         "provider": provider,
@@ -316,101 +262,66 @@ def main():
         "local_model_path": local_model_path,
     }
 
-    test_case_tab, chat_tab, tool_tab = st.tabs(
-        ["Chạy test case", "Chat tương tác", "Danh sách tools"]
+    st.markdown(
+        """
+        <div class="chat-shell">
+            <div class="chat-header">LAB1 ReAct Agent</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
     )
 
-    with test_case_tab:
-        selected_case = st.selectbox(
-            "Chọn test case để demo",
-            TEST_CASES,
-            format_func=lambda item: f"{item['id']} - {item['description']}",
-        )
-        st.text_area(
-            "Nội dung đầu vào",
-            value=selected_case["input"],
-            height=120,
-            disabled=True,
-        )
-
-        if st.button("Chạy so sánh", type="primary", use_container_width=True):
-            try:
-                with st.spinner("Đang chạy Baseline và ReAct Agent..."):
-                    baseline_answer, agent_answer, trace_lines = run_comparison(
-                        selected_case["input"], config, always_run_agent
-                    )
-
-                left, right = st.columns(2)
-                with left:
-                    render_result_block("Baseline Chatbot", baseline_answer)
-                with right:
-                    render_result_block("ReAct Agent", agent_answer)
-
-                with st.expander("Xem trace ReAct", expanded=True):
-                    render_trace_block(trace_lines)
-            except Exception as exc:
-                st.error(f"Không thể chạy test case: {exc}")
-
-    with chat_tab:
-        if "chat_history" not in st.session_state:
-            st.session_state.chat_history = []
-
-        with st.form("chat_form", clear_on_submit=True):
-            prompt = st.text_area(
-                "Nhập câu hỏi để so sánh hai chế độ",
-                placeholder="Ví dụ: Kiểm tra xem ở Paris hiện tại có khách sạn nào trống không?",
-                height=120,
-            )
-            submitted = st.form_submit_button("Gửi yêu cầu", type="primary")
-
-        if submitted:
-            if not prompt.strip():
-                st.warning("Bạn cần nhập câu hỏi trước khi chạy.")
-            else:
-                try:
-                    with st.spinner("Agent đang xử lý yêu cầu của bạn..."):
-                        baseline_answer, agent_answer, trace_lines = run_comparison(
-                            prompt, config, always_run_agent
-                        )
-                    st.session_state.chat_history.insert(
-                        0,
-                        {
-                            "prompt": prompt,
-                            "baseline": baseline_answer,
-                            "agent": agent_answer,
-                            "trace": trace_lines,
-                        },
-                    )
-                except Exception as exc:
-                    st.error(f"Không thể xử lý yêu cầu: {exc}")
-
-        for index, item in enumerate(st.session_state.chat_history):
-            st.markdown(f"### Yêu cầu {len(st.session_state.chat_history) - index}")
-            st.markdown(f"**Bạn hỏi:** {item['prompt']}")
-            left, right = st.columns(2)
-            with left:
-                render_result_block("Baseline Chatbot", item["baseline"])
-            with right:
-                render_result_block("ReAct Agent", item["agent"])
-            with st.expander("Trace chi tiết"):
-                render_trace_block(item["trace"])
-
-    with tool_tab:
-        st.write(
-            "Danh sách dưới đây được sinh động từ `tools.py`, nên khi bạn thêm tool mới, giao diện sẽ tự cập nhật."
-        )
-        for tool in DYNAMIC_TOOLS_SCHEMA:
-            safe_name = escape(tool["name"])
-            safe_desc = escape(tool["description"])
-            st.markdown(
-                f"""
-                <div class="tool-card">
-                    <div class="tool-name">{safe_name}</div>
-                    <div class="tool-desc">{safe_desc}</div>
+    if not st.session_state.messages:
+        st.markdown(
+            """
+            <div class="chat-welcome">
+                <div>
+                    <h1>How can I help?</h1>
+                    <p>Nhập câu hỏi của bạn để ReAct Agent trả lời và xem trace suy luận.</p>
                 </div>
-                """,
-                unsafe_allow_html=True,
-            )
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"]):
+            if message["role"] == "user":
+                st.markdown(message["content"])
+            else:
+                render_assistant_message(message["content"], message["trace"])
+
+    st.markdown('<div class="input-spacer"></div>', unsafe_allow_html=True)
+    prompt = st.chat_input("Message ReAct Agent")
+
+    if prompt:
+        st.session_state.messages.append({"role": "user", "content": prompt})
+
+        with st.chat_message("user"):
+            st.markdown(prompt)
+
+        with st.chat_message("assistant"):
+            try:
+                with st.spinner("Thinking..."):
+                    history_context = st.session_state.messages[:-1]
+                    answer, trace_lines = run_chat_turn(
+                        prompt,
+                        config,
+                        conversation_history=history_context,
+                    )
+                render_assistant_message(answer, trace_lines)
+            except Exception as exc:
+                answer = f"Không thể xử lý yêu cầu: {exc}"
+                trace_lines = [f"Error: {exc}"]
+                st.error(answer)
+
+        st.session_state.messages.append(
+            {
+                "role": "assistant",
+                "content": answer,
+                "trace": trace_lines,
+            }
+        )
 
 
 if __name__ == "__main__":
