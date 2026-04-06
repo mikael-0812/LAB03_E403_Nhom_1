@@ -1,0 +1,602 @@
+[
+    {
+        "name": "Product 1",
+        "price": 71.3,
+        "in_stock": true,
+        "discount": 0.33
+    },
+    {
+        "name": "Product 2",
+        "price": 148.48,
+        "in_stock": false,
+        "discount": 0.32
+    },
+    {
+        "name": "Product 3",
+        "price": 188.81,
+        "in_stock": true,
+        "discount": 0.33
+    },
+    {
+        "name": "Product 4",
+        "price": 74.51,
+        "in_stock": true,
+        "discount": 0.35
+    },
+    {
+        "name": "Product 5",
+        "price": 67.31,
+        "in_stock": false,
+        "discount": 0.13
+    },
+    {
+        "name": "Product 6",
+        "price": 20.32,
+        "in_stock": true,
+        "discount": 0.06
+    },
+    {
+        "name": "Product 7",
+        "price": 35.45,
+        "in_stock": false,
+        "discount": 0.46
+    },
+    {
+        "name": "Product 8",
+        "price": 116.29,
+        "in_stock": false,
+        "discount": 0.23
+    },
+    {
+        "name": "Product 9",
+        "price": 156.55,
+        "in_stock": false,
+        "discount": 0.4
+    },
+    {
+        "name": "Product 10",
+        "price": 104.88,
+        "in_stock": false,
+        "discount": 0.41
+    },
+    {
+        "name": "Product 11",
+        "price": 184.12,
+        "in_stock": true,
+        "discount": 0.36
+    },
+    {
+        "name": "Product 12",
+        "price": 115.88,
+        "in_stock": false,
+        "discount": 0.31
+    },
+    {
+        "name": "Product 13",
+        "price": 47.15,
+        "in_stock": false,
+        "discount": 0.44
+    },
+    {
+        "name": "Product 14",
+        "price": 193.84,
+        "in_stock": false,
+        "discount": 0.15
+    },
+    {
+        "name": "Product 15",
+        "price": 189.55,
+        "in_stock": false,
+        "discount": 0.35
+    },
+    {
+        "name": "Product 16",
+        "price": 51.96,
+        "in_stock": true,
+        "discount": 0.48
+    },
+    {
+        "name": "Product 17",
+        "price": 184.42,
+        "in_stock": true,
+        "discount": 0.41
+    },
+    {
+        "name": "Product 18",
+        "price": 80.43,
+        "in_stock": false,
+        "discount": 0.31
+    },
+    {
+        "name": "Product 19",
+        "price": 69.95,
+        "in_stock": true,
+        "discount": 0.4
+    },
+    {
+        "name": "Product 20",
+        "price": 154.26,
+        "in_stock": false,
+        "discount": 0.03
+    },
+    {
+        "name": "Product 21",
+        "price": 13.1,
+        "in_stock": true,
+        "discount": 0.37
+    },
+    {
+        "name": "Product 22",
+        "price": 172.3,
+        "in_stock": true,
+        "discount": 0.06
+    },
+    {
+        "name": "Product 23",
+        "price": 65.62,
+        "in_stock": true,
+        "discount": 0.05
+    },
+    {
+        "name": "Product 24",
+        "price": 131.42,
+        "in_stock": false,
+        "discount": 0.15
+    },
+    {
+        "name": "Product 25",
+        "price": 124.7,
+        "in_stock": false,
+        "discount": 0.04
+    },
+    {
+        "name": "Product 26",
+        "price": 151.33,
+        "in_stock": true,
+        "discount": 0.38
+    },
+    {
+        "name": "Product 27",
+        "price": 138.65,
+        "in_stock": false,
+        "discount": 0.25
+    },
+    {
+        "name": "Product 28",
+        "price": 74.07,
+        "in_stock": false,
+        "discount": 0.37
+    },
+    {
+        "name": "Product 29",
+        "price": 75.04,
+        "in_stock": false,
+        "discount": 0.04
+    },
+    {
+        "name": "Product 30",
+        "price": 154.91,
+        "in_stock": true,
+        "discount": 0.21
+    },
+    {
+        "name": "Product 31",
+        "price": 151.94,
+        "in_stock": true,
+        "discount": 0.27
+    },
+    {
+        "name": "Product 32",
+        "price": 57.63,
+        "in_stock": false,
+        "discount": 0.19
+    },
+    {
+        "name": "Product 33",
+        "price": 37.67,
+        "in_stock": false,
+        "discount": 0.31
+    },
+    {
+        "name": "Product 34",
+        "price": 67.88,
+        "in_stock": false,
+        "discount": 0.29
+    },
+    {
+        "name": "Product 35",
+        "price": 60.85,
+        "in_stock": false,
+        "discount": 0.47
+    },
+    {
+        "name": "Product 36",
+        "price": 84.4,
+        "in_stock": true,
+        "discount": 0.32
+    },
+    {
+        "name": "Product 37",
+        "price": 53.64,
+        "in_stock": false,
+        "discount": 0.18
+    },
+    {
+        "name": "Product 38",
+        "price": 167.22,
+        "in_stock": false,
+        "discount": 0.42
+    },
+    {
+        "name": "Product 39",
+        "price": 174.42,
+        "in_stock": true,
+        "discount": 0.28
+    },
+    {
+        "name": "Product 40",
+        "price": 69.67,
+        "in_stock": true,
+        "discount": 0.26
+    },
+    {
+        "name": "Product 41",
+        "price": 115.69,
+        "in_stock": true,
+        "discount": 0.08
+    },
+    {
+        "name": "Product 42",
+        "price": 67.27,
+        "in_stock": true,
+        "discount": 0.3
+    },
+    {
+        "name": "Product 43",
+        "price": 35.82,
+        "in_stock": true,
+        "discount": 0.23
+    },
+    {
+        "name": "Product 44",
+        "price": 94.53,
+        "in_stock": true,
+        "discount": 0.15
+    },
+    {
+        "name": "Product 45",
+        "price": 81.96,
+        "in_stock": false,
+        "discount": 0.23
+    },
+    {
+        "name": "Product 46",
+        "price": 36.42,
+        "in_stock": false,
+        "discount": 0.23
+    },
+    {
+        "name": "Product 47",
+        "price": 118.55,
+        "in_stock": false,
+        "discount": 0.08
+    },
+    {
+        "name": "Product 48",
+        "price": 129.81,
+        "in_stock": false,
+        "discount": 0.13
+    },
+    {
+        "name": "Product 49",
+        "price": 15.98,
+        "in_stock": true,
+        "discount": 0.17
+    },
+    {
+        "name": "Product 50",
+        "price": 72.91,
+        "in_stock": true,
+        "discount": 0.19
+    },
+    {
+        "name": "Product 51",
+        "price": 61.16,
+        "in_stock": true,
+        "discount": 0.05
+    },
+    {
+        "name": "Product 52",
+        "price": 95.01,
+        "in_stock": false,
+        "discount": 0.04
+    },
+    {
+        "name": "Product 53",
+        "price": 136.32,
+        "in_stock": false,
+        "discount": 0.48
+    },
+    {
+        "name": "Product 54",
+        "price": 110.07,
+        "in_stock": false,
+        "discount": 0.4
+    },
+    {
+        "name": "Product 55",
+        "price": 71.16,
+        "in_stock": true,
+        "discount": 0.43
+    },
+    {
+        "name": "Product 56",
+        "price": 35.36,
+        "in_stock": true,
+        "discount": 0.29
+    },
+    {
+        "name": "Product 57",
+        "price": 142.15,
+        "in_stock": true,
+        "discount": 0.47
+    },
+    {
+        "name": "Product 58",
+        "price": 68.25,
+        "in_stock": false,
+        "discount": 0.36
+    },
+    {
+        "name": "Product 59",
+        "price": 191.92,
+        "in_stock": false,
+        "discount": 0.28
+    },
+    {
+        "name": "Product 60",
+        "price": 195.99,
+        "in_stock": true,
+        "discount": 0.27
+    },
+    {
+        "name": "Product 61",
+        "price": 76.56,
+        "in_stock": false,
+        "discount": 0.13
+    },
+    {
+        "name": "Product 62",
+        "price": 158.08,
+        "in_stock": true,
+        "discount": 0.31
+    },
+    {
+        "name": "Product 63",
+        "price": 89.12,
+        "in_stock": false,
+        "discount": 0.03
+    },
+    {
+        "name": "Product 64",
+        "price": 94.83,
+        "in_stock": false,
+        "discount": 0.21
+    },
+    {
+        "name": "Product 65",
+        "price": 81.31,
+        "in_stock": true,
+        "discount": 0.35
+    },
+    {
+        "name": "Product 66",
+        "price": 115.99,
+        "in_stock": true,
+        "discount": 0.5
+    },
+    {
+        "name": "Product 67",
+        "price": 31.82,
+        "in_stock": false,
+        "discount": 0.2
+    },
+    {
+        "name": "Product 68",
+        "price": 171.65,
+        "in_stock": false,
+        "discount": 0.4
+    },
+    {
+        "name": "Product 69",
+        "price": 94.19,
+        "in_stock": false,
+        "discount": 0.14
+    },
+    {
+        "name": "Product 70",
+        "price": 87.31,
+        "in_stock": false,
+        "discount": 0.05
+    },
+    {
+        "name": "Product 71",
+        "price": 52.25,
+        "in_stock": true,
+        "discount": 0.31
+    },
+    {
+        "name": "Product 72",
+        "price": 122.78,
+        "in_stock": false,
+        "discount": 0.13
+    },
+    {
+        "name": "Product 73",
+        "price": 195.99,
+        "in_stock": true,
+        "discount": 0.29
+    },
+    {
+        "name": "Product 74",
+        "price": 26.03,
+        "in_stock": false,
+        "discount": 0.05
+    },
+    {
+        "name": "Product 75",
+        "price": 98.21,
+        "in_stock": false,
+        "discount": 0.4
+    },
+    {
+        "name": "Product 76",
+        "price": 66.41,
+        "in_stock": true,
+        "discount": 0.06
+    },
+    {
+        "name": "Product 77",
+        "price": 88.26,
+        "in_stock": true,
+        "discount": 0.17
+    },
+    {
+        "name": "Product 78",
+        "price": 96.99,
+        "in_stock": false,
+        "discount": 0.33
+    },
+    {
+        "name": "Product 79",
+        "price": 90.97,
+        "in_stock": false,
+        "discount": 0.49
+    },
+    {
+        "name": "Product 80",
+        "price": 120.68,
+        "in_stock": false,
+        "discount": 0.26
+    },
+    {
+        "name": "Product 81",
+        "price": 145.22,
+        "in_stock": false,
+        "discount": 0.43
+    },
+    {
+        "name": "Product 82",
+        "price": 31.89,
+        "in_stock": true,
+        "discount": 0.22
+    },
+    {
+        "name": "Product 83",
+        "price": 57.78,
+        "in_stock": true,
+        "discount": 0.37
+    },
+    {
+        "name": "Product 84",
+        "price": 52.05,
+        "in_stock": true,
+        "discount": 0.42
+    },
+    {
+        "name": "Product 85",
+        "price": 111.37,
+        "in_stock": false,
+        "discount": 0.1
+    },
+    {
+        "name": "Product 86",
+        "price": 36.94,
+        "in_stock": false,
+        "discount": 0.24
+    },
+    {
+        "name": "Product 87",
+        "price": 10.84,
+        "in_stock": false,
+        "discount": 0.19
+    },
+    {
+        "name": "Product 88",
+        "price": 12.28,
+        "in_stock": false,
+        "discount": 0.49
+    },
+    {
+        "name": "Product 89",
+        "price": 48.79,
+        "in_stock": true,
+        "discount": 0.11
+    },
+    {
+        "name": "Product 90",
+        "price": 146.97,
+        "in_stock": true,
+        "discount": 0.29
+    },
+    {
+        "name": "Product 91",
+        "price": 123.41,
+        "in_stock": false,
+        "discount": 0.31
+    },
+    {
+        "name": "Product 92",
+        "price": 87.73,
+        "in_stock": false,
+        "discount": 0.02
+    },
+    {
+        "name": "Product 93",
+        "price": 135.74,
+        "in_stock": false,
+        "discount": 0.33
+    },
+    {
+        "name": "Product 94",
+        "price": 189.82,
+        "in_stock": false,
+        "discount": 0.37
+    },
+    {
+        "name": "Product 95",
+        "price": 26.9,
+        "in_stock": false,
+        "discount": 0.13
+    },
+    {
+        "name": "Product 96",
+        "price": 44.22,
+        "in_stock": true,
+        "discount": 0.3
+    },
+    {
+        "name": "Product 97",
+        "price": 11.71,
+        "in_stock": false,
+        "discount": 0.3
+    },
+    {
+        "name": "Product 98",
+        "price": 169.75,
+        "in_stock": true,
+        "discount": 0.23
+    },
+    {
+        "name": "Product 99",
+        "price": 85.82,
+        "in_stock": true,
+        "discount": 0.4
+    },
+    {
+        "name": "Product 100",
+        "price": 135.55,
+        "in_stock": true,
+        "discount": 0.37
+    }
+]
