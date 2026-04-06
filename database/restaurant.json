@@ -1,0 +1,602 @@
+[
+    {
+        "name": "Restaurant 1",
+        "address": "Address 1",
+        "open_hours": "10:00 - 21:00",
+        "average_price": 29.55
+    },
+    {
+        "name": "Restaurant 2",
+        "address": "Address 2",
+        "open_hours": "10:00 - 23:00",
+        "average_price": 72.07
+    },
+    {
+        "name": "Restaurant 3",
+        "address": "Address 3",
+        "open_hours": "10:00 - 20:00",
+        "average_price": 58.77
+    },
+    {
+        "name": "Restaurant 4",
+        "address": "Address 4",
+        "open_hours": "8:00 - 23:00",
+        "average_price": 15.51
+    },
+    {
+        "name": "Restaurant 5",
+        "address": "Address 5",
+        "open_hours": "9:00 - 22:00",
+        "average_price": 76.42
+    },
+    {
+        "name": "Restaurant 6",
+        "address": "Address 6",
+        "open_hours": "9:00 - 20:00",
+        "average_price": 75.05
+    },
+    {
+        "name": "Restaurant 7",
+        "address": "Address 7",
+        "open_hours": "8:00 - 20:00",
+        "average_price": 55.29
+    },
+    {
+        "name": "Restaurant 8",
+        "address": "Address 8",
+        "open_hours": "12:00 - 24:00",
+        "average_price": 99.9
+    },
+    {
+        "name": "Restaurant 9",
+        "address": "Address 9",
+        "open_hours": "9:00 - 24:00",
+        "average_price": 14.23
+    },
+    {
+        "name": "Restaurant 10",
+        "address": "Address 10",
+        "open_hours": "8:00 - 21:00",
+        "average_price": 15.87
+    },
+    {
+        "name": "Restaurant 11",
+        "address": "Address 11",
+        "open_hours": "8:00 - 21:00",
+        "average_price": 79.14
+    },
+    {
+        "name": "Restaurant 12",
+        "address": "Address 12",
+        "open_hours": "12:00 - 21:00",
+        "average_price": 75.63
+    },
+    {
+        "name": "Restaurant 13",
+        "address": "Address 13",
+        "open_hours": "12:00 - 23:00",
+        "average_price": 23.26
+    },
+    {
+        "name": "Restaurant 14",
+        "address": "Address 14",
+        "open_hours": "8:00 - 20:00",
+        "average_price": 85.59
+    },
+    {
+        "name": "Restaurant 15",
+        "address": "Address 15",
+        "open_hours": "8:00 - 23:00",
+        "average_price": 65.23
+    },
+    {
+        "name": "Restaurant 16",
+        "address": "Address 16",
+        "open_hours": "8:00 - 20:00",
+        "average_price": 43.28
+    },
+    {
+        "name": "Restaurant 17",
+        "address": "Address 17",
+        "open_hours": "12:00 - 23:00",
+        "average_price": 55.49
+    },
+    {
+        "name": "Restaurant 18",
+        "address": "Address 18",
+        "open_hours": "11:00 - 22:00",
+        "average_price": 86.43
+    },
+    {
+        "name": "Restaurant 19",
+        "address": "Address 19",
+        "open_hours": "8:00 - 22:00",
+        "average_price": 15.44
+    },
+    {
+        "name": "Restaurant 20",
+        "address": "Address 20",
+        "open_hours": "8:00 - 23:00",
+        "average_price": 55.35
+    },
+    {
+        "name": "Restaurant 21",
+        "address": "Address 21",
+        "open_hours": "11:00 - 20:00",
+        "average_price": 54.4
+    },
+    {
+        "name": "Restaurant 22",
+        "address": "Address 22",
+        "open_hours": "9:00 - 22:00",
+        "average_price": 41.98
+    },
+    {
+        "name": "Restaurant 23",
+        "address": "Address 23",
+        "open_hours": "12:00 - 22:00",
+        "average_price": 68.14
+    },
+    {
+        "name": "Restaurant 24",
+        "address": "Address 24",
+        "open_hours": "9:00 - 20:00",
+        "average_price": 83.91
+    },
+    {
+        "name": "Restaurant 25",
+        "address": "Address 25",
+        "open_hours": "11:00 - 22:00",
+        "average_price": 52.08
+    },
+    {
+        "name": "Restaurant 26",
+        "address": "Address 26",
+        "open_hours": "8:00 - 22:00",
+        "average_price": 18.93
+    },
+    {
+        "name": "Restaurant 27",
+        "address": "Address 27",
+        "open_hours": "12:00 - 22:00",
+        "average_price": 50.51
+    },
+    {
+        "name": "Restaurant 28",
+        "address": "Address 28",
+        "open_hours": "11:00 - 23:00",
+        "average_price": 16.9
+    },
+    {
+        "name": "Restaurant 29",
+        "address": "Address 29",
+        "open_hours": "9:00 - 24:00",
+        "average_price": 63.0
+    },
+    {
+        "name": "Restaurant 30",
+        "address": "Address 30",
+        "open_hours": "11:00 - 24:00",
+        "average_price": 20.72
+    },
+    {
+        "name": "Restaurant 31",
+        "address": "Address 31",
+        "open_hours": "8:00 - 24:00",
+        "average_price": 47.38
+    },
+    {
+        "name": "Restaurant 32",
+        "address": "Address 32",
+        "open_hours": "11:00 - 24:00",
+        "average_price": 75.74
+    },
+    {
+        "name": "Restaurant 33",
+        "address": "Address 33",
+        "open_hours": "11:00 - 21:00",
+        "average_price": 34.01
+    },
+    {
+        "name": "Restaurant 34",
+        "address": "Address 34",
+        "open_hours": "12:00 - 23:00",
+        "average_price": 28.04
+    },
+    {
+        "name": "Restaurant 35",
+        "address": "Address 35",
+        "open_hours": "10:00 - 22:00",
+        "average_price": 86.19
+    },
+    {
+        "name": "Restaurant 36",
+        "address": "Address 36",
+        "open_hours": "8:00 - 21:00",
+        "average_price": 39.66
+    },
+    {
+        "name": "Restaurant 37",
+        "address": "Address 37",
+        "open_hours": "12:00 - 20:00",
+        "average_price": 20.33
+    },
+    {
+        "name": "Restaurant 38",
+        "address": "Address 38",
+        "open_hours": "8:00 - 20:00",
+        "average_price": 62.07
+    },
+    {
+        "name": "Restaurant 39",
+        "address": "Address 39",
+        "open_hours": "9:00 - 23:00",
+        "average_price": 76.23
+    },
+    {
+        "name": "Restaurant 40",
+        "address": "Address 40",
+        "open_hours": "10:00 - 24:00",
+        "average_price": 12.88
+    },
+    {
+        "name": "Restaurant 41",
+        "address": "Address 41",
+        "open_hours": "8:00 - 21:00",
+        "average_price": 80.77
+    },
+    {
+        "name": "Restaurant 42",
+        "address": "Address 42",
+        "open_hours": "10:00 - 22:00",
+        "average_price": 62.35
+    },
+    {
+        "name": "Restaurant 43",
+        "address": "Address 43",
+        "open_hours": "9:00 - 21:00",
+        "average_price": 11.39
+    },
+    {
+        "name": "Restaurant 44",
+        "address": "Address 44",
+        "open_hours": "10:00 - 23:00",
+        "average_price": 75.23
+    },
+    {
+        "name": "Restaurant 45",
+        "address": "Address 45",
+        "open_hours": "10:00 - 20:00",
+        "average_price": 16.99
+    },
+    {
+        "name": "Restaurant 46",
+        "address": "Address 46",
+        "open_hours": "9:00 - 24:00",
+        "average_price": 48.64
+    },
+    {
+        "name": "Restaurant 47",
+        "address": "Address 47",
+        "open_hours": "12:00 - 20:00",
+        "average_price": 77.78
+    },
+    {
+        "name": "Restaurant 48",
+        "address": "Address 48",
+        "open_hours": "11:00 - 22:00",
+        "average_price": 32.16
+    },
+    {
+        "name": "Restaurant 49",
+        "address": "Address 49",
+        "open_hours": "10:00 - 20:00",
+        "average_price": 22.64
+    },
+    {
+        "name": "Restaurant 50",
+        "address": "Address 50",
+        "open_hours": "9:00 - 24:00",
+        "average_price": 35.57
+    },
+    {
+        "name": "Restaurant 51",
+        "address": "Address 51",
+        "open_hours": "12:00 - 20:00",
+        "average_price": 96.6
+    },
+    {
+        "name": "Restaurant 52",
+        "address": "Address 52",
+        "open_hours": "8:00 - 20:00",
+        "average_price": 64.67
+    },
+    {
+        "name": "Restaurant 53",
+        "address": "Address 53",
+        "open_hours": "11:00 - 22:00",
+        "average_price": 87.36
+    },
+    {
+        "name": "Restaurant 54",
+        "address": "Address 54",
+        "open_hours": "11:00 - 22:00",
+        "average_price": 60.37
+    },
+    {
+        "name": "Restaurant 55",
+        "address": "Address 55",
+        "open_hours": "9:00 - 22:00",
+        "average_price": 22.21
+    },
+    {
+        "name": "Restaurant 56",
+        "address": "Address 56",
+        "open_hours": "11:00 - 20:00",
+        "average_price": 24.14
+    },
+    {
+        "name": "Restaurant 57",
+        "address": "Address 57",
+        "open_hours": "11:00 - 23:00",
+        "average_price": 37.77
+    },
+    {
+        "name": "Restaurant 58",
+        "address": "Address 58",
+        "open_hours": "11:00 - 22:00",
+        "average_price": 34.4
+    },
+    {
+        "name": "Restaurant 59",
+        "address": "Address 59",
+        "open_hours": "10:00 - 24:00",
+        "average_price": 59.48
+    },
+    {
+        "name": "Restaurant 60",
+        "address": "Address 60",
+        "open_hours": "11:00 - 21:00",
+        "average_price": 93.4
+    },
+    {
+        "name": "Restaurant 61",
+        "address": "Address 61",
+        "open_hours": "8:00 - 23:00",
+        "average_price": 46.88
+    },
+    {
+        "name": "Restaurant 62",
+        "address": "Address 62",
+        "open_hours": "9:00 - 23:00",
+        "average_price": 55.64
+    },
+    {
+        "name": "Restaurant 63",
+        "address": "Address 63",
+        "open_hours": "10:00 - 23:00",
+        "average_price": 76.73
+    },
+    {
+        "name": "Restaurant 64",
+        "address": "Address 64",
+        "open_hours": "12:00 - 23:00",
+        "average_price": 81.81
+    },
+    {
+        "name": "Restaurant 65",
+        "address": "Address 65",
+        "open_hours": "12:00 - 22:00",
+        "average_price": 65.03
+    },
+    {
+        "name": "Restaurant 66",
+        "address": "Address 66",
+        "open_hours": "8:00 - 20:00",
+        "average_price": 72.18
+    },
+    {
+        "name": "Restaurant 67",
+        "address": "Address 67",
+        "open_hours": "9:00 - 24:00",
+        "average_price": 62.06
+    },
+    {
+        "name": "Restaurant 68",
+        "address": "Address 68",
+        "open_hours": "9:00 - 20:00",
+        "average_price": 97.89
+    },
+    {
+        "name": "Restaurant 69",
+        "address": "Address 69",
+        "open_hours": "12:00 - 24:00",
+        "average_price": 41.41
+    },
+    {
+        "name": "Restaurant 70",
+        "address": "Address 70",
+        "open_hours": "8:00 - 21:00",
+        "average_price": 24.97
+    },
+    {
+        "name": "Restaurant 71",
+        "address": "Address 71",
+        "open_hours": "9:00 - 22:00",
+        "average_price": 72.86
+    },
+    {
+        "name": "Restaurant 72",
+        "address": "Address 72",
+        "open_hours": "9:00 - 20:00",
+        "average_price": 60.94
+    },
+    {
+        "name": "Restaurant 73",
+        "address": "Address 73",
+        "open_hours": "11:00 - 22:00",
+        "average_price": 18.62
+    },
+    {
+        "name": "Restaurant 74",
+        "address": "Address 74",
+        "open_hours": "12:00 - 22:00",
+        "average_price": 78.76
+    },
+    {
+        "name": "Restaurant 75",
+        "address": "Address 75",
+        "open_hours": "8:00 - 23:00",
+        "average_price": 84.21
+    },
+    {
+        "name": "Restaurant 76",
+        "address": "Address 76",
+        "open_hours": "8:00 - 24:00",
+        "average_price": 53.04
+    },
+    {
+        "name": "Restaurant 77",
+        "address": "Address 77",
+        "open_hours": "10:00 - 20:00",
+        "average_price": 69.96
+    },
+    {
+        "name": "Restaurant 78",
+        "address": "Address 78",
+        "open_hours": "9:00 - 22:00",
+        "average_price": 85.79
+    },
+    {
+        "name": "Restaurant 79",
+        "address": "Address 79",
+        "open_hours": "8:00 - 22:00",
+        "average_price": 16.38
+    },
+    {
+        "name": "Restaurant 80",
+        "address": "Address 80",
+        "open_hours": "12:00 - 23:00",
+        "average_price": 13.57
+    },
+    {
+        "name": "Restaurant 81",
+        "address": "Address 81",
+        "open_hours": "9:00 - 21:00",
+        "average_price": 30.55
+    },
+    {
+        "name": "Restaurant 82",
+        "address": "Address 82",
+        "open_hours": "10:00 - 24:00",
+        "average_price": 47.34
+    },
+    {
+        "name": "Restaurant 83",
+        "address": "Address 83",
+        "open_hours": "9:00 - 21:00",
+        "average_price": 13.91
+    },
+    {
+        "name": "Restaurant 84",
+        "address": "Address 84",
+        "open_hours": "9:00 - 20:00",
+        "average_price": 58.0
+    },
+    {
+        "name": "Restaurant 85",
+        "address": "Address 85",
+        "open_hours": "9:00 - 21:00",
+        "average_price": 10.14
+    },
+    {
+        "name": "Restaurant 86",
+        "address": "Address 86",
+        "open_hours": "9:00 - 21:00",
+        "average_price": 15.95
+    },
+    {
+        "name": "Restaurant 87",
+        "address": "Address 87",
+        "open_hours": "11:00 - 20:00",
+        "average_price": 43.97
+    },
+    {
+        "name": "Restaurant 88",
+        "address": "Address 88",
+        "open_hours": "9:00 - 22:00",
+        "average_price": 74.25
+    },
+    {
+        "name": "Restaurant 89",
+        "address": "Address 89",
+        "open_hours": "10:00 - 24:00",
+        "average_price": 60.91
+    },
+    {
+        "name": "Restaurant 90",
+        "address": "Address 90",
+        "open_hours": "12:00 - 21:00",
+        "average_price": 79.17
+    },
+    {
+        "name": "Restaurant 91",
+        "address": "Address 91",
+        "open_hours": "9:00 - 23:00",
+        "average_price": 15.2
+    },
+    {
+        "name": "Restaurant 92",
+        "address": "Address 92",
+        "open_hours": "10:00 - 23:00",
+        "average_price": 67.37
+    },
+    {
+        "name": "Restaurant 93",
+        "address": "Address 93",
+        "open_hours": "11:00 - 22:00",
+        "average_price": 35.85
+    },
+    {
+        "name": "Restaurant 94",
+        "address": "Address 94",
+        "open_hours": "11:00 - 24:00",
+        "average_price": 45.6
+    },
+    {
+        "name": "Restaurant 95",
+        "address": "Address 95",
+        "open_hours": "9:00 - 24:00",
+        "average_price": 21.58
+    },
+    {
+        "name": "Restaurant 96",
+        "address": "Address 96",
+        "open_hours": "11:00 - 24:00",
+        "average_price": 53.25
+    },
+    {
+        "name": "Restaurant 97",
+        "address": "Address 97",
+        "open_hours": "9:00 - 21:00",
+        "average_price": 10.9
+    },
+    {
+        "name": "Restaurant 98",
+        "address": "Address 98",
+        "open_hours": "12:00 - 23:00",
+        "average_price": 44.83
+    },
+    {
+        "name": "Restaurant 99",
+        "address": "Address 99",
+        "open_hours": "10:00 - 20:00",
+        "average_price": 54.96
+    },
+    {
+        "name": "Restaurant 100",
+        "address": "Address 100",
+        "open_hours": "8:00 - 23:00",
+        "average_price": 78.05
+    }
+]

@@ -1,0 +1,602 @@
+[
+    {
+        "account_id": "ACC001",
+        "balance": 7836.31,
+        "loan_interest": 0.04,
+        "currency_exchange_rate": 1.05
+    },
+    {
+        "account_id": "ACC002",
+        "balance": 2773.03,
+        "loan_interest": 0.06,
+        "currency_exchange_rate": 0.94
+    },
+    {
+        "account_id": "ACC003",
+        "balance": 8123.9,
+        "loan_interest": 0.06,
+        "currency_exchange_rate": 0.84
+    },
+    {
+        "account_id": "ACC004",
+        "balance": 980.93,
+        "loan_interest": 0.07,
+        "currency_exchange_rate": 1.01
+    },
+    {
+        "account_id": "ACC005",
+        "balance": 2233.65,
+        "loan_interest": 0.06,
+        "currency_exchange_rate": 0.92
+    },
+    {
+        "account_id": "ACC006",
+        "balance": 489.13,
+        "loan_interest": 0.04,
+        "currency_exchange_rate": 0.86
+    },
+    {
+        "account_id": "ACC007",
+        "balance": 7583.04,
+        "loan_interest": 0.08,
+        "currency_exchange_rate": 0.85
+    },
+    {
+        "account_id": "ACC008",
+        "balance": 8664.53,
+        "loan_interest": 0.04,
+        "currency_exchange_rate": 0.83
+    },
+    {
+        "account_id": "ACC009",
+        "balance": 1244.43,
+        "loan_interest": 0.03,
+        "currency_exchange_rate": 1.06
+    },
+    {
+        "account_id": "ACC010",
+        "balance": 5406.34,
+        "loan_interest": 0.09,
+        "currency_exchange_rate": 1.18
+    },
+    {
+        "account_id": "ACC011",
+        "balance": 2321.21,
+        "loan_interest": 0.09,
+        "currency_exchange_rate": 0.84
+    },
+    {
+        "account_id": "ACC012",
+        "balance": 9317.58,
+        "loan_interest": 0.06,
+        "currency_exchange_rate": 1.14
+    },
+    {
+        "account_id": "ACC013",
+        "balance": 7938.46,
+        "loan_interest": 0.07,
+        "currency_exchange_rate": 1.18
+    },
+    {
+        "account_id": "ACC014",
+        "balance": 5570.8,
+        "loan_interest": 0.09,
+        "currency_exchange_rate": 1.07
+    },
+    {
+        "account_id": "ACC015",
+        "balance": 5803.8,
+        "loan_interest": 0.07,
+        "currency_exchange_rate": 0.93
+    },
+    {
+        "account_id": "ACC016",
+        "balance": 110.64,
+        "loan_interest": 0.06,
+        "currency_exchange_rate": 1.1
+    },
+    {
+        "account_id": "ACC017",
+        "balance": 8184.83,
+        "loan_interest": 0.01,
+        "currency_exchange_rate": 0.85
+    },
+    {
+        "account_id": "ACC018",
+        "balance": 2292.42,
+        "loan_interest": 0.09,
+        "currency_exchange_rate": 0.87
+    },
+    {
+        "account_id": "ACC019",
+        "balance": 9983.82,
+        "loan_interest": 0.09,
+        "currency_exchange_rate": 1.04
+    },
+    {
+        "account_id": "ACC020",
+        "balance": 469.22,
+        "loan_interest": 0.1,
+        "currency_exchange_rate": 0.8
+    },
+    {
+        "account_id": "ACC021",
+        "balance": 1983.45,
+        "loan_interest": 0.07,
+        "currency_exchange_rate": 0.83
+    },
+    {
+        "account_id": "ACC022",
+        "balance": 1713.57,
+        "loan_interest": 0.04,
+        "currency_exchange_rate": 1.06
+    },
+    {
+        "account_id": "ACC023",
+        "balance": 1512.92,
+        "loan_interest": 0.07,
+        "currency_exchange_rate": 0.87
+    },
+    {
+        "account_id": "ACC024",
+        "balance": 6260.21,
+        "loan_interest": 0.08,
+        "currency_exchange_rate": 0.92
+    },
+    {
+        "account_id": "ACC025",
+        "balance": 1101.28,
+        "loan_interest": 0.09,
+        "currency_exchange_rate": 0.82
+    },
+    {
+        "account_id": "ACC026",
+        "balance": 4243.33,
+        "loan_interest": 0.01,
+        "currency_exchange_rate": 0.91
+    },
+    {
+        "account_id": "ACC027",
+        "balance": 7694.57,
+        "loan_interest": 0.05,
+        "currency_exchange_rate": 0.96
+    },
+    {
+        "account_id": "ACC028",
+        "balance": 8714.57,
+        "loan_interest": 0.04,
+        "currency_exchange_rate": 0.87
+    },
+    {
+        "account_id": "ACC029",
+        "balance": 6373.77,
+        "loan_interest": 0.06,
+        "currency_exchange_rate": 1.07
+    },
+    {
+        "account_id": "ACC030",
+        "balance": 3512.82,
+        "loan_interest": 0.08,
+        "currency_exchange_rate": 1.09
+    },
+    {
+        "account_id": "ACC031",
+        "balance": 3157.93,
+        "loan_interest": 0.06,
+        "currency_exchange_rate": 1.09
+    },
+    {
+        "account_id": "ACC032",
+        "balance": 9010.44,
+        "loan_interest": 0.03,
+        "currency_exchange_rate": 0.85
+    },
+    {
+        "account_id": "ACC033",
+        "balance": 7489.5,
+        "loan_interest": 0.09,
+        "currency_exchange_rate": 0.89
+    },
+    {
+        "account_id": "ACC034",
+        "balance": 5370.93,
+        "loan_interest": 0.08,
+        "currency_exchange_rate": 1.14
+    },
+    {
+        "account_id": "ACC035",
+        "balance": 6795.08,
+        "loan_interest": 0.05,
+        "currency_exchange_rate": 1.1
+    },
+    {
+        "account_id": "ACC036",
+        "balance": 4529.77,
+        "loan_interest": 0.02,
+        "currency_exchange_rate": 1.17
+    },
+    {
+        "account_id": "ACC037",
+        "balance": 6458.13,
+        "loan_interest": 0.05,
+        "currency_exchange_rate": 1.15
+    },
+    {
+        "account_id": "ACC038",
+        "balance": 3829.09,
+        "loan_interest": 0.03,
+        "currency_exchange_rate": 1.02
+    },
+    {
+        "account_id": "ACC039",
+        "balance": 1124.44,
+        "loan_interest": 0.09,
+        "currency_exchange_rate": 1.16
+    },
+    {
+        "account_id": "ACC040",
+        "balance": 3797.62,
+        "loan_interest": 0.09,
+        "currency_exchange_rate": 1.07
+    },
+    {
+        "account_id": "ACC041",
+        "balance": 8113.84,
+        "loan_interest": 0.06,
+        "currency_exchange_rate": 1.03
+    },
+    {
+        "account_id": "ACC042",
+        "balance": 1132.25,
+        "loan_interest": 0.02,
+        "currency_exchange_rate": 1.14
+    },
+    {
+        "account_id": "ACC043",
+        "balance": 7336.01,
+        "loan_interest": 0.03,
+        "currency_exchange_rate": 1.04
+    },
+    {
+        "account_id": "ACC044",
+        "balance": 5430.34,
+        "loan_interest": 0.03,
+        "currency_exchange_rate": 1.04
+    },
+    {
+        "account_id": "ACC045",
+        "balance": 8029.99,
+        "loan_interest": 0.01,
+        "currency_exchange_rate": 1.09
+    },
+    {
+        "account_id": "ACC046",
+        "balance": 8716.13,
+        "loan_interest": 0.09,
+        "currency_exchange_rate": 0.82
+    },
+    {
+        "account_id": "ACC047",
+        "balance": 6522.39,
+        "loan_interest": 0.07,
+        "currency_exchange_rate": 1.19
+    },
+    {
+        "account_id": "ACC048",
+        "balance": 9685.94,
+        "loan_interest": 0.06,
+        "currency_exchange_rate": 0.87
+    },
+    {
+        "account_id": "ACC049",
+        "balance": 5839.22,
+        "loan_interest": 0.07,
+        "currency_exchange_rate": 0.99
+    },
+    {
+        "account_id": "ACC050",
+        "balance": 85.31,
+        "loan_interest": 0.08,
+        "currency_exchange_rate": 1.04
+    },
+    {
+        "account_id": "ACC051",
+        "balance": 8099.96,
+        "loan_interest": 0.07,
+        "currency_exchange_rate": 1.06
+    },
+    {
+        "account_id": "ACC052",
+        "balance": 6127.97,
+        "loan_interest": 0.08,
+        "currency_exchange_rate": 0.91
+    },
+    {
+        "account_id": "ACC053",
+        "balance": 2266.03,
+        "loan_interest": 0.03,
+        "currency_exchange_rate": 0.95
+    },
+    {
+        "account_id": "ACC054",
+        "balance": 6043.26,
+        "loan_interest": 0.06,
+        "currency_exchange_rate": 0.98
+    },
+    {
+        "account_id": "ACC055",
+        "balance": 9086.49,
+        "loan_interest": 0.02,
+        "currency_exchange_rate": 0.95
+    },
+    {
+        "account_id": "ACC056",
+        "balance": 3568.91,
+        "loan_interest": 0.01,
+        "currency_exchange_rate": 1.19
+    },
+    {
+        "account_id": "ACC057",
+        "balance": 8388.41,
+        "loan_interest": 0.03,
+        "currency_exchange_rate": 1.09
+    },
+    {
+        "account_id": "ACC058",
+        "balance": 4558.32,
+        "loan_interest": 0.03,
+        "currency_exchange_rate": 0.86
+    },
+    {
+        "account_id": "ACC059",
+        "balance": 1948.18,
+        "loan_interest": 0.08,
+        "currency_exchange_rate": 0.97
+    },
+    {
+        "account_id": "ACC060",
+        "balance": 5324.22,
+        "loan_interest": 0.02,
+        "currency_exchange_rate": 0.89
+    },
+    {
+        "account_id": "ACC061",
+        "balance": 1113.66,
+        "loan_interest": 0.09,
+        "currency_exchange_rate": 1.16
+    },
+    {
+        "account_id": "ACC062",
+        "balance": 1175.09,
+        "loan_interest": 0.04,
+        "currency_exchange_rate": 1.16
+    },
+    {
+        "account_id": "ACC063",
+        "balance": 5280.5,
+        "loan_interest": 0.02,
+        "currency_exchange_rate": 0.94
+    },
+    {
+        "account_id": "ACC064",
+        "balance": 5168.08,
+        "loan_interest": 0.02,
+        "currency_exchange_rate": 1.19
+    },
+    {
+        "account_id": "ACC065",
+        "balance": 8050.19,
+        "loan_interest": 0.03,
+        "currency_exchange_rate": 0.97
+    },
+    {
+        "account_id": "ACC066",
+        "balance": 9135.55,
+        "loan_interest": 0.04,
+        "currency_exchange_rate": 1.04
+    },
+    {
+        "account_id": "ACC067",
+        "balance": 6821.83,
+        "loan_interest": 0.04,
+        "currency_exchange_rate": 1.08
+    },
+    {
+        "account_id": "ACC068",
+        "balance": 3761.9,
+        "loan_interest": 0.02,
+        "currency_exchange_rate": 0.93
+    },
+    {
+        "account_id": "ACC069",
+        "balance": 4230.65,
+        "loan_interest": 0.09,
+        "currency_exchange_rate": 0.81
+    },
+    {
+        "account_id": "ACC070",
+        "balance": 9327.81,
+        "loan_interest": 0.1,
+        "currency_exchange_rate": 1.13
+    },
+    {
+        "account_id": "ACC071",
+        "balance": 3638.85,
+        "loan_interest": 0.03,
+        "currency_exchange_rate": 1.17
+    },
+    {
+        "account_id": "ACC072",
+        "balance": 5380.73,
+        "loan_interest": 0.05,
+        "currency_exchange_rate": 0.99
+    },
+    {
+        "account_id": "ACC073",
+        "balance": 8458.02,
+        "loan_interest": 0.06,
+        "currency_exchange_rate": 0.98
+    },
+    {
+        "account_id": "ACC074",
+        "balance": 3332.67,
+        "loan_interest": 0.07,
+        "currency_exchange_rate": 0.83
+    },
+    {
+        "account_id": "ACC075",
+        "balance": 54.45,
+        "loan_interest": 0.02,
+        "currency_exchange_rate": 1.02
+    },
+    {
+        "account_id": "ACC076",
+        "balance": 852.42,
+        "loan_interest": 0.09,
+        "currency_exchange_rate": 0.89
+    },
+    {
+        "account_id": "ACC077",
+        "balance": 2495.82,
+        "loan_interest": 0.04,
+        "currency_exchange_rate": 1.05
+    },
+    {
+        "account_id": "ACC078",
+        "balance": 6443.77,
+        "loan_interest": 0.07,
+        "currency_exchange_rate": 0.82
+    },
+    {
+        "account_id": "ACC079",
+        "balance": 5576.88,
+        "loan_interest": 0.08,
+        "currency_exchange_rate": 0.82
+    },
+    {
+        "account_id": "ACC080",
+        "balance": 2465.28,
+        "loan_interest": 0.09,
+        "currency_exchange_rate": 1.19
+    },
+    {
+        "account_id": "ACC081",
+        "balance": 2867.59,
+        "loan_interest": 0.09,
+        "currency_exchange_rate": 0.88
+    },
+    {
+        "account_id": "ACC082",
+        "balance": 6366.4,
+        "loan_interest": 0.08,
+        "currency_exchange_rate": 0.95
+    },
+    {
+        "account_id": "ACC083",
+        "balance": 429.99,
+        "loan_interest": 0.02,
+        "currency_exchange_rate": 1.07
+    },
+    {
+        "account_id": "ACC084",
+        "balance": 4788.94,
+        "loan_interest": 0.02,
+        "currency_exchange_rate": 1.17
+    },
+    {
+        "account_id": "ACC085",
+        "balance": 9328.06,
+        "loan_interest": 0.04,
+        "currency_exchange_rate": 1.02
+    },
+    {
+        "account_id": "ACC086",
+        "balance": 4999.19,
+        "loan_interest": 0.07,
+        "currency_exchange_rate": 0.91
+    },
+    {
+        "account_id": "ACC087",
+        "balance": 2732.28,
+        "loan_interest": 0.02,
+        "currency_exchange_rate": 1.16
+    },
+    {
+        "account_id": "ACC088",
+        "balance": 8452.9,
+        "loan_interest": 0.01,
+        "currency_exchange_rate": 0.98
+    },
+    {
+        "account_id": "ACC089",
+        "balance": 1583.19,
+        "loan_interest": 0.05,
+        "currency_exchange_rate": 1.15
+    },
+    {
+        "account_id": "ACC090",
+        "balance": 1512.93,
+        "loan_interest": 0.08,
+        "currency_exchange_rate": 1.16
+    },
+    {
+        "account_id": "ACC091",
+        "balance": 4213.95,
+        "loan_interest": 0.01,
+        "currency_exchange_rate": 0.93
+    },
+    {
+        "account_id": "ACC092",
+        "balance": 6935.79,
+        "loan_interest": 0.06,
+        "currency_exchange_rate": 1.03
+    },
+    {
+        "account_id": "ACC093",
+        "balance": 8861.69,
+        "loan_interest": 0.05,
+        "currency_exchange_rate": 0.93
+    },
+    {
+        "account_id": "ACC094",
+        "balance": 3480.06,
+        "loan_interest": 0.02,
+        "currency_exchange_rate": 0.81
+    },
+    {
+        "account_id": "ACC095",
+        "balance": 9690.78,
+        "loan_interest": 0.08,
+        "currency_exchange_rate": 0.97
+    },
+    {
+        "account_id": "ACC096",
+        "balance": 7117.17,
+        "loan_interest": 0.06,
+        "currency_exchange_rate": 1.0
+    },
+    {
+        "account_id": "ACC097",
+        "balance": 9656.84,
+        "loan_interest": 0.1,
+        "currency_exchange_rate": 0.82
+    },
+    {
+        "account_id": "ACC098",
+        "balance": 9072.58,
+        "loan_interest": 0.08,
+        "currency_exchange_rate": 0.81
+    },
+    {
+        "account_id": "ACC099",
+        "balance": 7735.48,
+        "loan_interest": 0.02,
+        "currency_exchange_rate": 1.05
+    },
+    {
+        "account_id": "ACC100",
+        "balance": 7886.82,
+        "loan_interest": 0.08,
+        "currency_exchange_rate": 1.1
+    }
+]

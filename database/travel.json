@@ -1,0 +1,702 @@
+[
+    {
+        "type": "hotel",
+        "name": "Travel Option 1",
+        "price": 386.34,
+        "available": true,
+        "discount": 0.22
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 2",
+        "price": 477.22,
+        "available": false,
+        "discount": 0.2
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 3",
+        "price": 387.77,
+        "available": false,
+        "discount": 0.11
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 4",
+        "price": 254.93,
+        "available": false,
+        "discount": 0.27
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 5",
+        "price": 116.99,
+        "available": false,
+        "discount": 0.09
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 6",
+        "price": 398.84,
+        "available": true,
+        "discount": 0.07
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 7",
+        "price": 251.03,
+        "available": false,
+        "discount": 0.23
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 8",
+        "price": 268.57,
+        "available": false,
+        "discount": 0.18
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 9",
+        "price": 404.73,
+        "available": true,
+        "discount": 0.23
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 10",
+        "price": 318.04,
+        "available": true,
+        "discount": 0.19
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 11",
+        "price": 134.24,
+        "available": true,
+        "discount": 0.29
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 12",
+        "price": 224.9,
+        "available": false,
+        "discount": 0.16
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 13",
+        "price": 403.01,
+        "available": true,
+        "discount": 0.27
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 14",
+        "price": 279.85,
+        "available": false,
+        "discount": 0.18
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 15",
+        "price": 412.8,
+        "available": false,
+        "discount": 0.12
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 16",
+        "price": 448.78,
+        "available": true,
+        "discount": 0.02
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 17",
+        "price": 281.62,
+        "available": false,
+        "discount": 0.25
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 18",
+        "price": 369.47,
+        "available": true,
+        "discount": 0.26
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 19",
+        "price": 227.25,
+        "available": false,
+        "discount": 0.09
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 20",
+        "price": 135.36,
+        "available": true,
+        "discount": 0.16
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 21",
+        "price": 398.49,
+        "available": false,
+        "discount": 0.18
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 22",
+        "price": 221.6,
+        "available": false,
+        "discount": 0.23
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 23",
+        "price": 215.07,
+        "available": false,
+        "discount": 0.11
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 24",
+        "price": 429.76,
+        "available": false,
+        "discount": 0.26
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 25",
+        "price": 129.34,
+        "available": true,
+        "discount": 0.19
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 26",
+        "price": 301.71,
+        "available": true,
+        "discount": 0.25
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 27",
+        "price": 274.09,
+        "available": true,
+        "discount": 0.23
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 28",
+        "price": 363.52,
+        "available": true,
+        "discount": 0.07
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 29",
+        "price": 113.11,
+        "available": false,
+        "discount": 0.13
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 30",
+        "price": 459.27,
+        "available": false,
+        "discount": 0.13
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 31",
+        "price": 126.8,
+        "available": true,
+        "discount": 0.2
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 32",
+        "price": 151.28,
+        "available": false,
+        "discount": 0.3
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 33",
+        "price": 434.09,
+        "available": true,
+        "discount": 0.21
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 34",
+        "price": 147.8,
+        "available": false,
+        "discount": 0.06
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 35",
+        "price": 192.56,
+        "available": true,
+        "discount": 0.07
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 36",
+        "price": 448.19,
+        "available": false,
+        "discount": 0.02
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 37",
+        "price": 353.79,
+        "available": false,
+        "discount": 0.05
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 38",
+        "price": 154.77,
+        "available": true,
+        "discount": 0.19
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 39",
+        "price": 297.4,
+        "available": false,
+        "discount": 0.07
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 40",
+        "price": 344.27,
+        "available": false,
+        "discount": 0.03
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 41",
+        "price": 323.49,
+        "available": false,
+        "discount": 0.06
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 42",
+        "price": 114.75,
+        "available": true,
+        "discount": 0.17
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 43",
+        "price": 181.26,
+        "available": true,
+        "discount": 0.16
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 44",
+        "price": 245.76,
+        "available": true,
+        "discount": 0.2
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 45",
+        "price": 97.04,
+        "available": true,
+        "discount": 0.08
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 46",
+        "price": 350.82,
+        "available": false,
+        "discount": 0.27
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 47",
+        "price": 454.93,
+        "available": true,
+        "discount": 0.11
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 48",
+        "price": 195.33,
+        "available": true,
+        "discount": 0.21
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 49",
+        "price": 136.71,
+        "available": false,
+        "discount": 0.06
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 50",
+        "price": 72.72,
+        "available": false,
+        "discount": 0.06
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 51",
+        "price": 130.05,
+        "available": true,
+        "discount": 0.2
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 52",
+        "price": 427.39,
+        "available": true,
+        "discount": 0.22
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 53",
+        "price": 481.9,
+        "available": true,
+        "discount": 0.1
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 54",
+        "price": 212.18,
+        "available": false,
+        "discount": 0.27
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 55",
+        "price": 414.81,
+        "available": true,
+        "discount": 0.21
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 56",
+        "price": 77.47,
+        "available": true,
+        "discount": 0.24
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 57",
+        "price": 415.53,
+        "available": true,
+        "discount": 0.03
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 58",
+        "price": 422.18,
+        "available": false,
+        "discount": 0.03
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 59",
+        "price": 323.12,
+        "available": false,
+        "discount": 0.0
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 60",
+        "price": 353.22,
+        "available": false,
+        "discount": 0.25
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 61",
+        "price": 204.71,
+        "available": true,
+        "discount": 0.11
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 62",
+        "price": 231.12,
+        "available": false,
+        "discount": 0.07
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 63",
+        "price": 267.61,
+        "available": false,
+        "discount": 0.09
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 64",
+        "price": 228.35,
+        "available": true,
+        "discount": 0.25
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 65",
+        "price": 266.03,
+        "available": true,
+        "discount": 0.28
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 66",
+        "price": 220.64,
+        "available": false,
+        "discount": 0.01
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 67",
+        "price": 212.59,
+        "available": true,
+        "discount": 0.29
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 68",
+        "price": 125.49,
+        "available": false,
+        "discount": 0.02
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 69",
+        "price": 123.87,
+        "available": false,
+        "discount": 0.05
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 70",
+        "price": 170.5,
+        "available": true,
+        "discount": 0.25
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 71",
+        "price": 238.4,
+        "available": false,
+        "discount": 0.15
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 72",
+        "price": 275.34,
+        "available": false,
+        "discount": 0.27
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 73",
+        "price": 158.69,
+        "available": false,
+        "discount": 0.0
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 74",
+        "price": 77.33,
+        "available": true,
+        "discount": 0.21
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 75",
+        "price": 457.53,
+        "available": true,
+        "discount": 0.04
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 76",
+        "price": 279.84,
+        "available": true,
+        "discount": 0.22
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 77",
+        "price": 303.7,
+        "available": false,
+        "discount": 0.23
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 78",
+        "price": 101.51,
+        "available": false,
+        "discount": 0.27
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 79",
+        "price": 223.87,
+        "available": false,
+        "discount": 0.17
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 80",
+        "price": 461.54,
+        "available": true,
+        "discount": 0.0
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 81",
+        "price": 317.4,
+        "available": false,
+        "discount": 0.09
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 82",
+        "price": 408.65,
+        "available": true,
+        "discount": 0.09
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 83",
+        "price": 168.92,
+        "available": true,
+        "discount": 0.24
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 84",
+        "price": 445.18,
+        "available": false,
+        "discount": 0.09
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 85",
+        "price": 441.49,
+        "available": false,
+        "discount": 0.14
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 86",
+        "price": 121.8,
+        "available": true,
+        "discount": 0.27
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 87",
+        "price": 443.7,
+        "available": true,
+        "discount": 0.14
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 88",
+        "price": 433.84,
+        "available": true,
+        "discount": 0.2
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 89",
+        "price": 317.46,
+        "available": true,
+        "discount": 0.03
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 90",
+        "price": 455.53,
+        "available": true,
+        "discount": 0.08
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 91",
+        "price": 340.24,
+        "available": false,
+        "discount": 0.3
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 92",
+        "price": 134.28,
+        "available": true,
+        "discount": 0.13
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 93",
+        "price": 349.92,
+        "available": false,
+        "discount": 0.04
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 94",
+        "price": 219.76,
+        "available": true,
+        "discount": 0.24
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 95",
+        "price": 121.66,
+        "available": true,
+        "discount": 0.29
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 96",
+        "price": 432.38,
+        "available": true,
+        "discount": 0.02
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 97",
+        "price": 93.5,
+        "available": false,
+        "discount": 0.26
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 98",
+        "price": 437.04,
+        "available": true,
+        "discount": 0.24
+    },
+    {
+        "type": "flight",
+        "name": "Travel Option 99",
+        "price": 380.03,
+        "available": true,
+        "discount": 0.25
+    },
+    {
+        "type": "hotel",
+        "name": "Travel Option 100",
+        "price": 290.03,
+        "available": true,
+        "discount": 0.25
+    }
+]

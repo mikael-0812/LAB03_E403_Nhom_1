@@ -1,0 +1,867 @@
+[
+    {
+        "name": "Course 1",
+        "credits": 4,
+        "price": 984.64,
+        "prerequisites": [],
+        "type": "required"
+    },
+    {
+        "name": "Course 2",
+        "credits": 4,
+        "price": 925.87,
+        "prerequisites": [
+            "Course 1",
+            "Course 1"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 3",
+        "credits": 3,
+        "price": 837.4,
+        "prerequisites": [
+            "Course 2",
+            "Course 2"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 4",
+        "credits": 1,
+        "price": 590.3,
+        "prerequisites": [
+            "Course 2"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 5",
+        "credits": 1,
+        "price": 248.59,
+        "prerequisites": [
+            "Course 4"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 6",
+        "credits": 3,
+        "price": 826.28,
+        "prerequisites": [],
+        "type": "required"
+    },
+    {
+        "name": "Course 7",
+        "credits": 4,
+        "price": 177.14,
+        "prerequisites": [
+            "Course 1",
+            "Course 5"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 8",
+        "credits": 4,
+        "price": 800.22,
+        "prerequisites": [],
+        "type": "required"
+    },
+    {
+        "name": "Course 9",
+        "credits": 2,
+        "price": 486.65,
+        "prerequisites": [
+            "Course 1",
+            "Course 5"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 10",
+        "credits": 4,
+        "price": 625.36,
+        "prerequisites": [
+            "Course 3",
+            "Course 8"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 11",
+        "credits": 2,
+        "price": 822.08,
+        "prerequisites": [],
+        "type": "elective"
+    },
+    {
+        "name": "Course 12",
+        "credits": 4,
+        "price": 872.04,
+        "prerequisites": [],
+        "type": "elective"
+    },
+    {
+        "name": "Course 13",
+        "credits": 1,
+        "price": 805.41,
+        "prerequisites": [
+            "Course 7",
+            "Course 4"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 14",
+        "credits": 2,
+        "price": 570.83,
+        "prerequisites": [],
+        "type": "required"
+    },
+    {
+        "name": "Course 15",
+        "credits": 4,
+        "price": 310.52,
+        "prerequisites": [
+            "Course 4"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 16",
+        "credits": 1,
+        "price": 946.39,
+        "prerequisites": [
+            "Course 12",
+            "Course 3"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 17",
+        "credits": 2,
+        "price": 293.89,
+        "prerequisites": [
+            "Course 16"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 18",
+        "credits": 1,
+        "price": 838.36,
+        "prerequisites": [
+            "Course 7"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 19",
+        "credits": 1,
+        "price": 314.94,
+        "prerequisites": [
+            "Course 15"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 20",
+        "credits": 4,
+        "price": 153.61,
+        "prerequisites": [
+            "Course 15"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 21",
+        "credits": 2,
+        "price": 108.5,
+        "prerequisites": [
+            "Course 17"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 22",
+        "credits": 1,
+        "price": 316.11,
+        "prerequisites": [
+            "Course 4"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 23",
+        "credits": 4,
+        "price": 144.33,
+        "prerequisites": [],
+        "type": "elective"
+    },
+    {
+        "name": "Course 24",
+        "credits": 2,
+        "price": 747.65,
+        "prerequisites": [],
+        "type": "elective"
+    },
+    {
+        "name": "Course 25",
+        "credits": 1,
+        "price": 551.1,
+        "prerequisites": [
+            "Course 24"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 26",
+        "credits": 4,
+        "price": 484.73,
+        "prerequisites": [
+            "Course 9"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 27",
+        "credits": 3,
+        "price": 746.3,
+        "prerequisites": [],
+        "type": "required"
+    },
+    {
+        "name": "Course 28",
+        "credits": 4,
+        "price": 906.27,
+        "prerequisites": [
+            "Course 11"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 29",
+        "credits": 2,
+        "price": 766.89,
+        "prerequisites": [
+            "Course 3"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 30",
+        "credits": 4,
+        "price": 109.32,
+        "prerequisites": [
+            "Course 23"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 31",
+        "credits": 4,
+        "price": 636.08,
+        "prerequisites": [
+            "Course 28",
+            "Course 9"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 32",
+        "credits": 3,
+        "price": 185.66,
+        "prerequisites": [
+            "Course 29",
+            "Course 17"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 33",
+        "credits": 2,
+        "price": 806.78,
+        "prerequisites": [
+            "Course 27"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 34",
+        "credits": 4,
+        "price": 877.34,
+        "prerequisites": [
+            "Course 32",
+            "Course 30"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 35",
+        "credits": 1,
+        "price": 987.38,
+        "prerequisites": [],
+        "type": "elective"
+    },
+    {
+        "name": "Course 36",
+        "credits": 1,
+        "price": 612.07,
+        "prerequisites": [
+            "Course 25"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 37",
+        "credits": 3,
+        "price": 513.0,
+        "prerequisites": [
+            "Course 20",
+            "Course 31"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 38",
+        "credits": 1,
+        "price": 504.24,
+        "prerequisites": [
+            "Course 22",
+            "Course 12"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 39",
+        "credits": 1,
+        "price": 928.66,
+        "prerequisites": [],
+        "type": "required"
+    },
+    {
+        "name": "Course 40",
+        "credits": 4,
+        "price": 421.14,
+        "prerequisites": [],
+        "type": "elective"
+    },
+    {
+        "name": "Course 41",
+        "credits": 1,
+        "price": 791.65,
+        "prerequisites": [
+            "Course 27",
+            "Course 29"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 42",
+        "credits": 1,
+        "price": 346.77,
+        "prerequisites": [
+            "Course 21",
+            "Course 38"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 43",
+        "credits": 4,
+        "price": 337.24,
+        "prerequisites": [
+            "Course 3",
+            "Course 41"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 44",
+        "credits": 1,
+        "price": 333.79,
+        "prerequisites": [
+            "Course 31"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 45",
+        "credits": 1,
+        "price": 271.14,
+        "prerequisites": [],
+        "type": "required"
+    },
+    {
+        "name": "Course 46",
+        "credits": 4,
+        "price": 439.48,
+        "prerequisites": [
+            "Course 42"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 47",
+        "credits": 4,
+        "price": 524.21,
+        "prerequisites": [
+            "Course 19"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 48",
+        "credits": 1,
+        "price": 302.98,
+        "prerequisites": [],
+        "type": "required"
+    },
+    {
+        "name": "Course 49",
+        "credits": 2,
+        "price": 861.62,
+        "prerequisites": [],
+        "type": "elective"
+    },
+    {
+        "name": "Course 50",
+        "credits": 2,
+        "price": 388.03,
+        "prerequisites": [
+            "Course 26",
+            "Course 26"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 51",
+        "credits": 1,
+        "price": 874.52,
+        "prerequisites": [],
+        "type": "elective"
+    },
+    {
+        "name": "Course 52",
+        "credits": 3,
+        "price": 484.5,
+        "prerequisites": [
+            "Course 13"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 53",
+        "credits": 4,
+        "price": 266.21,
+        "prerequisites": [
+            "Course 36",
+            "Course 48"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 54",
+        "credits": 2,
+        "price": 584.66,
+        "prerequisites": [
+            "Course 44",
+            "Course 9"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 55",
+        "credits": 3,
+        "price": 549.2,
+        "prerequisites": [
+            "Course 42"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 56",
+        "credits": 3,
+        "price": 951.96,
+        "prerequisites": [
+            "Course 10"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 57",
+        "credits": 2,
+        "price": 530.72,
+        "prerequisites": [],
+        "type": "elective"
+    },
+    {
+        "name": "Course 58",
+        "credits": 3,
+        "price": 884.72,
+        "prerequisites": [
+            "Course 31"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 59",
+        "credits": 1,
+        "price": 654.3,
+        "prerequisites": [
+            "Course 42"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 60",
+        "credits": 1,
+        "price": 497.45,
+        "prerequisites": [],
+        "type": "required"
+    },
+    {
+        "name": "Course 61",
+        "credits": 1,
+        "price": 397.91,
+        "prerequisites": [],
+        "type": "required"
+    },
+    {
+        "name": "Course 62",
+        "credits": 4,
+        "price": 300.06,
+        "prerequisites": [],
+        "type": "required"
+    },
+    {
+        "name": "Course 63",
+        "credits": 4,
+        "price": 553.18,
+        "prerequisites": [
+            "Course 25"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 64",
+        "credits": 4,
+        "price": 187.44,
+        "prerequisites": [
+            "Course 21"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 65",
+        "credits": 3,
+        "price": 342.54,
+        "prerequisites": [],
+        "type": "required"
+    },
+    {
+        "name": "Course 66",
+        "credits": 4,
+        "price": 606.02,
+        "prerequisites": [],
+        "type": "elective"
+    },
+    {
+        "name": "Course 67",
+        "credits": 1,
+        "price": 634.39,
+        "prerequisites": [],
+        "type": "required"
+    },
+    {
+        "name": "Course 68",
+        "credits": 3,
+        "price": 566.64,
+        "prerequisites": [
+            "Course 29"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 69",
+        "credits": 2,
+        "price": 107.69,
+        "prerequisites": [
+            "Course 35"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 70",
+        "credits": 1,
+        "price": 317.18,
+        "prerequisites": [
+            "Course 29"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 71",
+        "credits": 3,
+        "price": 549.74,
+        "prerequisites": [
+            "Course 25"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 72",
+        "credits": 4,
+        "price": 296.91,
+        "prerequisites": [
+            "Course 38",
+            "Course 8"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 73",
+        "credits": 4,
+        "price": 413.2,
+        "prerequisites": [
+            "Course 13",
+            "Course 50"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 74",
+        "credits": 1,
+        "price": 646.54,
+        "prerequisites": [
+            "Course 16"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 75",
+        "credits": 3,
+        "price": 889.84,
+        "prerequisites": [
+            "Course 69"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 76",
+        "credits": 3,
+        "price": 745.4,
+        "prerequisites": [
+            "Course 22",
+            "Course 8"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 77",
+        "credits": 1,
+        "price": 609.75,
+        "prerequisites": [
+            "Course 25"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 78",
+        "credits": 2,
+        "price": 307.0,
+        "prerequisites": [
+            "Course 22",
+            "Course 37"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 79",
+        "credits": 3,
+        "price": 403.43,
+        "prerequisites": [],
+        "type": "elective"
+    },
+    {
+        "name": "Course 80",
+        "credits": 2,
+        "price": 170.72,
+        "prerequisites": [],
+        "type": "required"
+    },
+    {
+        "name": "Course 81",
+        "credits": 2,
+        "price": 203.14,
+        "prerequisites": [
+            "Course 26",
+            "Course 48"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 82",
+        "credits": 1,
+        "price": 290.07,
+        "prerequisites": [
+            "Course 17",
+            "Course 62"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 83",
+        "credits": 3,
+        "price": 814.4,
+        "prerequisites": [
+            "Course 69"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 84",
+        "credits": 3,
+        "price": 390.63,
+        "prerequisites": [
+            "Course 23"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 85",
+        "credits": 2,
+        "price": 380.66,
+        "prerequisites": [
+            "Course 17"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 86",
+        "credits": 4,
+        "price": 720.75,
+        "prerequisites": [
+            "Course 7",
+            "Course 16"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 87",
+        "credits": 2,
+        "price": 579.69,
+        "prerequisites": [
+            "Course 74"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 88",
+        "credits": 2,
+        "price": 394.69,
+        "prerequisites": [
+            "Course 17"
+        ],
+        "type": "required"
+    },
+    {
+        "name": "Course 89",
+        "credits": 2,
+        "price": 413.92,
+        "prerequisites": [],
+        "type": "required"
+    },
+    {
+        "name": "Course 90",
+        "credits": 1,
+        "price": 360.62,
+        "prerequisites": [
+            "Course 6"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 91",
+        "credits": 3,
+        "price": 959.88,
+        "prerequisites": [],
+        "type": "required"
+    },
+    {
+        "name": "Course 92",
+        "credits": 1,
+        "price": 179.79,
+        "prerequisites": [
+            "Course 22"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 93",
+        "credits": 1,
+        "price": 209.21,
+        "prerequisites": [],
+        "type": "elective"
+    },
+    {
+        "name": "Course 94",
+        "credits": 1,
+        "price": 857.7,
+        "prerequisites": [
+            "Course 76"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 95",
+        "credits": 1,
+        "price": 679.35,
+        "prerequisites": [
+            "Course 7",
+            "Course 8"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 96",
+        "credits": 2,
+        "price": 917.73,
+        "prerequisites": [],
+        "type": "required"
+    },
+    {
+        "name": "Course 97",
+        "credits": 4,
+        "price": 641.2,
+        "prerequisites": [
+            "Course 21",
+            "Course 69"
+        ],
+        "type": "elective"
+    },
+    {
+        "name": "Course 98",
+        "credits": 4,
+        "price": 666.48,
+        "prerequisites": [],
+        "type": "elective"
+    },
+    {
+        "name": "Course 99",
+        "credits": 3,
+        "price": 951.74,
+        "prerequisites": [],
+        "type": "elective"
+    },
+    {
+        "name": "Course 100",
+        "credits": 4,
+        "price": 126.14,
+        "prerequisites": [
+            "Course 85"
+        ],
+        "type": "elective"
+    }
+]
