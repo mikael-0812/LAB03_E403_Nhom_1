@@ -16,6 +16,9 @@ class IndustryLogger:
         self.logger.setLevel(logging.INFO)
         self.logger.propagate = False
 
+        if self.logger.handlers:
+            return
+
         if not os.path.exists(log_dir):
             os.makedirs(log_dir)
 

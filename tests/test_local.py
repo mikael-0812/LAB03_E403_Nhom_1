@@ -5,11 +5,12 @@ from dotenv import load_dotenv
 # Add src to path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+from src.app_runtime import resolve_local_model_path
 from src.core.local_provider import LocalProvider
 
 def test_local_phi3():
     load_dotenv()
-    model_path = os.getenv("LOCAL_MODEL_PATH", "./models/Phi-3-mini-4k-instruct-q4.gguf")
+    model_path = resolve_local_model_path(os.getenv("LOCAL_MODEL_PATH"))
     
     print(f"--- Testing Local Provider with Phi-3 ---")
     print(f"Model Path: {model_path}")
