@@ -1,5 +1,11 @@
 import json
 import os
+import ast
+import requests
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # Base directory for database files
 DATABASE_DIR = 'database'
@@ -283,5 +289,84 @@ def currency_exchange(account_id):
             if account['account_id'] == account_id:
                 return account.get('currency_exchange_rate', 1.0)
         return None
+    except Exception as e:
+        return f"Error: {str(e)}"
+
+# GitHub API Tools
+def get_github_token():
+    """Get GitHub token from environment variables."""
+    return os.getenv('GITHUB_TOKEN')
+
+def create_github_issue(repo_owner, repo_name, title, body):
+    """
+    Create a new issue on a GitHub repository.
+    Args: repo_owner (str), repo_name (str), title (str), body (str)
+    Returns: dict with issue details or error message
+    """
+    token = get_github_token()
+    if not token:
+        return "Error: GitHub token not found in environment variables."
+    url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/issues"
+    headers = {
+        "Authorization": f"token {token}",
+        "Accept": "application/vnd.github.v3+json"
+    }
+    data = {
+        "title": title,
+        "body": body
+    }
+    try:
+        response = requests.post(url, headers=headers, json=data)
+        if response.status_code == 201:
+            return response.json()
+        else:
+            return f"Error: {response.status_code} - {response.text}"
+    except Exception as e:
+        return f"Error: {str(e)}"
+
+def get_github_repo_info(repo_owner, repo_name):
+    """
+    Get information about a GitHub repository.
+    Args: repo_owner (str), repo_name (str)
+    Returns: dict with repo details or error message
+    """
+    token = get_github_token()
+    if not token:
+        return "Error: GitHub token not found in environment variables."
+    url = f"https://api.github.com/repos/{repo_owner}/{repo_name}"
+    headers = {
+        "Authorization": f"token {token}",
+        "Accept": "application/vnd.github.v3+json"
+    }
+    try:
+        response = requests.get(url, headers=headers)
+        if response.status_code == 200:
+            return response.json()
+        else:
+            return f"Error: {response.status_code} - {response.text}"
+    except Exception as e:
+        return f"Error: {str(e)}"
+
+def list_github_issues(repo_owner, repo_name, state='open'):
+    """
+    List issues in a GitHub repository.
+    Args: repo_owner (str), repo_name (str), state (str) - 'open', 'closed', 'all'
+    Returns: list of issues or error message
+    """
+    token = get_github_token()
+    if not token:
+        return "Error: GitHub token not found in environment variables."
+    url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/issues"
+    headers = {
+        "Authorization": f"token {token}",
+        "Accept": "application/vnd.github.v3+json"
+    }
+    params = {"state": state}
+    try:
+        response = requests.get(url, headers=headers, params=params)
+        if response.status_code == 200:
+            return response.json()
+        else:
+            return f"Error: {response.status_code} - {response.text}"
     except Exception as e:
         return f"Error: {str(e)}"
